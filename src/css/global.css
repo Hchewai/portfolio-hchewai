@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+
+:root {
+    --darkbody: #0D0D0F;
+    --darkfont: #F2F2F2;
+    --mainbutton: #8B7CF6;
+    --mainfont: "Inter";
+    --headingweight: 700;
+    --informationtext: #9A9AA3;
+    --fontlightweight: 250;
+    --bordercolor: #16161A;
+    --borderradius: 6px;
+    --mainheading:  6rem;
+    --subheading: 4rem;
+}
+
+body{
+    background-color: var(--darkbody);
+    color: var(--darkfont);
+    font-family: var(--mainfont);
+}
+
+h1, h2{
+    font-weight: var(--headingweight);
+    
+}
+
+h1{
+    font-size: var(--mainheading);
+}
+h2{
+    font-size: var(--subheading);
+}
+
+h5, h6{
+    color: #9A9AA3;
+    font-weight: var(--fontlightweight);
+}
