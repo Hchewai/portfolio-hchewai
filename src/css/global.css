@@ -26,6 +26,36 @@ body{
     font-family: var(--mainfont);
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+}
+
+nav li{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+nav a:hover{
+    color: #9A9AA3;
+}
+
+
 h1, h2{
     font-weight: var(--headingweight);
     
@@ -33,6 +63,8 @@ h1, h2{
 
 h1{
     font-size: var(--mainheading);
+    display: flex;
+    justify-content: center;
 }
 h2{
     font-size: var(--subheading);
@@ -53,4 +85,16 @@ h5, h6{
     color: #333;
     border-radius: 40%;
     width: 30px;
+}
+
+.cta-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.25em;
+    height: 2.625em;
+    background-color: var(--mainbutton);
+    color: #fff;
+    border-radius: 6px;
+    
 }
