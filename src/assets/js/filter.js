@@ -1,8 +1,3 @@
- function filter(){
-
-console.log("hello")
-
+export function init(initialCategory) {
+console.log(initialCategory)
 }
-
-filter();
-export {filter}

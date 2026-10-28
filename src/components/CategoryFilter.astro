@@ -15,15 +15,15 @@
 <script>
   const filterTrigger = document.getElementById("filter-import");
 
-  filterTrigger?.addEventListener("click", (event) => {
+  filterTrigger?.addEventListener("click", async (event) => {
     if (!(event.target instanceof Element)) return;
 
     const button = event.target.closest("[data-filter]");
 
     if (!button) return;
-
     const selectedCategory = button.getAttribute("data-filter");
 
+    const filterModule = await import("../assets/js/filter");
     console.log(selectedCategory);
   });
 </script>
