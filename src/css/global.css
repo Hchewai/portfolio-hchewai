@@ -1,8 +1,15 @@
+/* Imports */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Root and document css */
 *{
-    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
 }
 :root {
     --darkbody: #0D0D0F;
@@ -14,8 +21,8 @@
     --fontlightweight: 250;
     --bordercolor: #16161A;
     --borderradius: 6px;
-    --mainheading:  6rem;
-    --subheading: 4rem;
+    --mainheading: clamp(3.5rem, 5vw, 6rem);
+--subheading: clamp(2.5rem, 3.5vw, 4rem);
     --logo-font: "Jura";
     --logo-size: 64px;
 }
@@ -26,6 +33,7 @@ body{
     font-family: var(--mainfont);
 }
 
+/* Nav Section */
 nav{
     display: flex;
     align-items: center;
@@ -56,37 +64,13 @@ nav a:hover{
 }
 
 
-h1, h2{
-    font-weight: var(--headingweight);
-    
-}
-
-h1{
-    font-size: var(--mainheading);
-    display: flex;
-    justify-content: center;
-}
-h2{
-    font-size: var(--subheading);
-}
-
-h5, h6{
-    color: #9A9AA3;
-    font-weight: var(--fontlightweight);
-}
-
 .logo-styling{
     font-family: var(--logo-font);
     font-size: var(--logo-size);
 }
 
-.all-category{
-    background-color: #8B7CF6;
-    color: #333;
-    border-radius: 40%;
-    width: 30px;
-}
 
+/* CTA Button */
 .cta-btn{
     display: flex;
     align-items: center;
@@ -98,3 +82,61 @@ h5, h6{
     border-radius: 6px;
     
 }
+
+/* Heading Styling */
+h1, h2{
+    font-weight: var(--headingweight);
+    
+}
+
+h1{
+    font-size: var(--mainheading);
+   display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.5em;
+}
+h2{
+    font-size: var(--subheading);
+}
+
+h5, h6{
+    color: #9A9AA3;
+    font-weight: var(--fontlightweight);
+}
+
+.lead-text{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Projects Page Category Filter Styling */
+
+
+.projects-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+.all-category,
+.web-category,
+.experiments-category{
+border: 1px solid #29292F;
+border-radius: 6px;
+font: inherit;
+cursor: pointer;
+padding: 0.65em 1.1em;
+color: #F2F2F2;
+background: transparent;
+
+}
+
