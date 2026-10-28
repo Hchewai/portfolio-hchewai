@@ -3,10 +3,19 @@
 ---
 
 <!-- Static Shell -->
-<div class="filter-container">
-  <button class="all-category">All</button>
-  <button class="web-category">Web Development</button>
-  <button class="experiments-category">Experiments</button>
+<div class="filter-container" id="filter-import">
+  <button class="all-category" data-filter="*">All</button>
+  <button class="web-category" data-filter="web">Web Development</button>
+  <button class="experiments-category" data-filter="experiments"
+    >Experiments</button
+  >
 </div>
 
 <!-- Hydration Trigger -->
+<script>
+  const filterTrigger = document.getElementById("filter-import");
+
+  filterTrigger?.addEventListener("click", (event) => {
+    import("../assets/js/filter");
+  });
+</script>
