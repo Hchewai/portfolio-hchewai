@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.3.5"
   }
 }
