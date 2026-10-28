@@ -1,0 +1,25 @@
+[
+    {
+        "slug": "luciano",
+        "title": "Luciano Mesiti Custom WordPress Theme",
+        "category": "web",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget mauris mauris. Praesent egestas id nisi non pretium. Mauris at.",
+        "thumbnail": "/images/placeholder.png"
+    },
+      {
+        "slug": "nextapp",
+        "title": "Next JS App",
+        "category": "web",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget mauris mauris. Praesent egestas id nisi non pretium. Mauris at.",
+        "thumbnail": "/images/placeholder.png"
+    },
+      {
+        "slug": "portfolio",
+        "title": "Implementation of Island Architecture",
+        "category": "research",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget mauris mauris. Praesent egestas id nisi non pretium. Mauris at.",
+        "thumbnail": "/images/placeholder.png"
+    }
+
+    
+]
