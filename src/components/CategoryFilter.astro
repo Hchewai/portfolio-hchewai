@@ -6,6 +6,7 @@
 <div class="filter-container" id="filter-import">
   <button class="all-category" data-filter="*">All</button>
   <button class="web-category" data-filter="web">Web Development</button>
+  <button class="web-category" data-filter="research">Research</button>
   <button class="experiments-category" data-filter="experiments"
     >Experiments</button
   >
@@ -15,16 +16,26 @@
 <script>
   const filterTrigger = document.getElementById("filter-import");
 
+  // Import the module once
+  const filterModulePromise = import("../assets/js/filter");
+
+  // Initialise the filter once with the default category
+  filterModulePromise.then((filterModule) => {
+    filterModule.init("*");
+  });
+
   filterTrigger?.addEventListener("click", async (event) => {
     if (!(event.target instanceof Element)) return;
 
     const button = event.target.closest("[data-filter]");
 
-    if (!button) return;
-    const selectedCategory = button.getAttribute("data-filter");
+    if (!(button instanceof HTMLButtonElement)) return;
 
-    const filterModule = await import("../assets/js/filter");
-    console.log(selectedCategory);
+    const selectedCategory = button.dataset.filter;
+
+    const filterModule = await filterModulePromise;
+
+    filterModule.setCategory(selectedCategory);
   });
 </script>
 
