@@ -106,8 +106,9 @@ h5, h6{
 
 .lead-text{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
+
 
 
 /* Projects Page Category Filter Styling */
@@ -117,8 +118,6 @@ h5, h6{
     width: 80%;
     margin: 0 auto;
 }
-
-
 
 .filter-container {
     display: flex;
@@ -139,4 +138,60 @@ color: #F2F2F2;
 background: transparent;
 
 }
+
+
+.projects-grid{
+display: flex;
+flex-direction: column;
+
+gap: clamp(3rem, 8vw, 6rem);
+margin: 3rem;
+}
+.project-card{
+    display: flex;
+    align-items: center;
+        gap: clamp(1.5rem, 4vw, 4rem);
+
+
+}
+.project-card[hidden] {
+    display: none !important;
+}
+
+.project-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.project-info{
+        flex: 1;
+    min-width: 0;
+
+}
+
+.view-project{
+
+}
+
+
+.project-thumbnail{
+    width: 580px;
+    height: 450px;
+    border-radius: 6px;
+    object-fit: cover;
+
+}
+
+
+.project-category {
+    margin: 0 0 0.75rem;
+    color: var(--informationtext);
+    font-size: 0.9rem;
+}
+
+.view-project {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--mainbutton);
+    text-decoration: none;
+}
+
 
