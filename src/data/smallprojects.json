@@ -6,5 +6,13 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget mauris mauris. Praesent egestas id nisi non pretium. Mauris at.",
         "thumbnail": "/images/placeholder.png",
         "technologies": ["React", "CSS"]
+    },
+         {
+        "slug": "game",
+        "title": "Vanilla HTML Game",
+        "category": "experiment",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget mauris mauris. Praesent egestas id nisi non pretium. Mauris at.",
+        "thumbnail": "/images/placeholder.png",
+        "technologies": ["JavaScript", "HTML", "CSS", "Design"]
     }
 ]

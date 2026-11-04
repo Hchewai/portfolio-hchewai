@@ -200,7 +200,7 @@ margin: 3rem;
     flex-wrap: wrap;
     gap: 0.5rem;
     list-style: none;
-    margin: 1rem 0 0;
+    margin: 2.5rem 0 0;
     padding: 0;
   }
 
@@ -223,6 +223,12 @@ margin: 3rem;
     height: 314px;
   }
 
+  .card-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* gap: 1rem; */
+  }
 /*------------- Footer --------------------*/
 .site-footer {
   background-color: #333;

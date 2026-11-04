@@ -60,32 +60,33 @@ import smallProjects from "../data/smallprojects.json";
             View more on GitHub
           </a>
         </p>
-
-        {
-          smallProjects.map((smallProject) => (
-            <div
-              class="small-card-wrapper"
-              data-category={smallProject.category}
-            >
-              <p class="project-category">{smallProject.category}</p>
-              <img
-                src={smallProject.thumbnail}
-                alt={smallProject.title}
-                class="small-card-img"
-              />
-              <h3>{smallProject.title}</h3>
-              <p>{smallProject.description}</p>
-              <ul class="technology-tags" aria-label="Technologies">
-                {smallProject.technologies.map((technology) => (
-                  <li class="technology-tag"> {technology}</li>
-                ))}
-              </ul>
-              <a href={`/projects/${smallProject.slug}`} class="view-project">
-                View Project
-              </a>
-            </div>
-          ))
-        }
+        <div class="card-row">
+          {
+            smallProjects.map((smallProject) => (
+              <div
+                class="small-card-wrapper"
+                data-category={smallProject.category}
+              >
+                <p class="project-category">{smallProject.category}</p>
+                <img
+                  src={smallProject.thumbnail}
+                  alt={smallProject.title}
+                  class="small-card-img"
+                />
+                <h3>{smallProject.title}</h3>
+                <p>{smallProject.description}</p>
+                <ul class="technology-tags" aria-label="Technologies">
+                  {smallProject.technologies.map((technology) => (
+                    <li class="technology-tag"> {technology}</li>
+                  ))}
+                </ul>
+                <a href={`/projects/${smallProject.slug}`} class="view-project">
+                  View Project
+                </a>
+              </div>
+            ))
+          }
+        </div>
       </section>
     </main>
     <Footer />
