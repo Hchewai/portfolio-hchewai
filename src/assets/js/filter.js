@@ -1,7 +1,7 @@
 let projectCards = [];
 
 export function init(initialCategory) {
-    projectCards = document.querySelectorAll(".project-card");
+    projectCards = document.querySelectorAll(".filterable-project");
 
     setCategory(initialCategory);
 }

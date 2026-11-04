@@ -26,7 +26,10 @@ import smallProjects from "../data/smallprojects.json";
       <div id="projects-grid" class="projects-grid">
         {
           projects.map((project) => (
-            <article class="project-card" data-category={project.category}>
+            <article
+              class="project-card filterable-project"
+              data-category={project.category}
+            >
               <img
                 src={project.thumbnail}
                 alt={project.title}
@@ -64,7 +67,7 @@ import smallProjects from "../data/smallprojects.json";
           {
             smallProjects.map((smallProject) => (
               <div
-                class="small-card-wrapper"
+                class="small-card-wrapper filterable-project"
                 data-category={smallProject.category}
               >
                 <p class="project-category">{smallProject.category}</p>

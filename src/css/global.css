@@ -157,7 +157,7 @@ margin: 3rem;
 
 
 }
-.project-card[hidden] {
+.filterable-project[hidden] {
     display: none !important;
 }
 
