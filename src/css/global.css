@@ -171,6 +171,8 @@ margin: 3rem;
 }
 
 
+
+
 .project-thumbnail{
     width: 580px;
     height: 450px;
@@ -221,4 +223,80 @@ margin: 3rem;
     height: 314px;
   }
 
-  
+/*------------- Footer --------------------*/
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 32px 0 12px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.footer-col {
+  width: 25%;
+}
+
+.footer-col .logo-styling {
+  font-size: 2.5rem;
+}
+
+.footer-col h4 {
+  color: #fff;
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-col:last-child {
+    margin-bottom: 0;
+  }
+}

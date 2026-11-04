@@ -5,7 +5,7 @@ import "../css/global.css";
 import Navigation from "../components/Navigation.astro";
 import CategoryFilter from "../components/CategoryFilter.astro";
 import projects from "../data/projects.json";
-import smallProjects from "../data/smallprojects.json";
+import Footer from "../components/Footer.astro";
 ---
 
 <html>
@@ -15,8 +15,10 @@ import smallProjects from "../data/smallprojects.json";
     <main class="projects-content">
       <h1>Projects & Experiments</h1>
       <p class="lead-text">
-        A collection of things I've built and explored which I plan to expand as
-        I move into networking.
+        These are some of my front-end development projects, marking the first
+        stage of my technical journey. As I continue my studies, I plan to
+        expand beyond web development into computer systems, networking, and
+        other areas of technology.
       </p>
       <CategoryFilter />
 
@@ -85,5 +87,6 @@ import smallProjects from "../data/smallprojects.json";
         }
       </section>
     </main>
+    <Footer />
   </body>
 </html>
