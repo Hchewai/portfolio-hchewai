@@ -1,0 +1,10 @@
+[
+        {
+        "slug": "ecommerce",
+        "title": "Static E-commerce Rebuild in React",
+        "category": "web",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget mauris mauris. Praesent egestas id nisi non pretium. Mauris at.",
+        "thumbnail": "/images/placeholder.png",
+        "technologies": ["React", "CSS"]
+    }
+]

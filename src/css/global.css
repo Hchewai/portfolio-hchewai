@@ -27,6 +27,9 @@ body{
     --logo-size: 64px;
 }
 
+.text-center{
+    text-align: center;
+}
 body{
     background-color: var(--darkbody);
     color: var(--darkfont);
@@ -167,10 +170,6 @@ margin: 3rem;
 
 }
 
-.view-project{
-
-}
-
 
 .project-thumbnail{
     width: 580px;
@@ -185,6 +184,7 @@ margin: 3rem;
     margin: 0 0 0.75rem;
     color: var(--informationtext);
     font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
 .view-project {
@@ -193,5 +193,32 @@ margin: 3rem;
     color: var(--mainbutton);
     text-decoration: none;
 }
+  .technology-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+
+  .technology-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    border-radius: 90px;
+    padding: 0.4rem 0.75rem;
+    color: var(--informationtext);
+    font-size: 0.875rem;
+  }
 
 
+  .small-card-wrapper{
+    max-width: 350px;
+  }
+  .small-card-img{
+    height: 314px;
+  }
+
+  

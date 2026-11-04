@@ -5,6 +5,7 @@ import "../css/global.css";
 import Navigation from "../components/Navigation.astro";
 import CategoryFilter from "../components/CategoryFilter.astro";
 import projects from "../data/projects.json";
+import smallProjects from "../data/smallprojects.json";
 ---
 
 <html>
@@ -13,7 +14,10 @@ import projects from "../data/projects.json";
     <Navigation />
     <main class="projects-content">
       <h1>Projects & Experiments</h1>
-      <p class="lead-text">A collection of things I've built and explored</p>
+      <p class="lead-text">
+        A collection of things I've built and explored which I plan to expand as
+        I move into networking.
+      </p>
       <CategoryFilter />
 
       <div id="projects-grid" class="projects-grid">
@@ -32,11 +36,54 @@ import projects from "../data/projects.json";
                 <a href={`/projects/${project.slug}`} class="view-project">
                   View Project
                 </a>
+
+                <ul class="technology-tags" aria-label="Technologies">
+                  {project.technologies.map((technology) => (
+                    <li class="technology-tag">{technology}</li>
+                  ))}
+                </ul>
               </div>
             </article>
           ))
         }
       </div>
+      <section class="more-work">
+        <h2 class="text-center">More Work</h2>
+        <p class="text-center">
+          Smaller projects, experiments, and technical exercises. <a
+            href="https://github.com/Hchewai"
+            class="view-project text-center"
+          >
+            View more on GitHub
+          </a>
+        </p>
+
+        {
+          smallProjects.map((smallProject) => (
+            <div
+              class="small-card-wrapper"
+              data-category={smallProject.category}
+            >
+              <p class="project-category">{smallProject.category}</p>
+              <img
+                src={smallProject.thumbnail}
+                alt={smallProject.title}
+                class="small-card-img"
+              />
+              <h3>{smallProject.title}</h3>
+              <p>{smallProject.description}</p>
+              <ul class="technology-tags" aria-label="Technologies">
+                {smallProject.technologies.map((technology) => (
+                  <li class="technology-tag"> {technology}</li>
+                ))}
+              </ul>
+              <a href={`/projects/${smallProject.slug}`} class="view-project">
+                View Project
+              </a>
+            </div>
+          ))
+        }
+      </section>
     </main>
   </body>
 </html>

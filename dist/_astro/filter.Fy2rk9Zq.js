@@ -1,0 +1,1 @@
+var e=[];function t(t){e=document.querySelectorAll(`.project-card`),n(t)}function n(t){e.forEach(e=>{e.hidden=t!==`*`&&e.dataset.category!==t})}export{t as init,n as setCategory};
