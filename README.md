@@ -30,7 +30,6 @@ A selection of projects demonstrating my development experience:
 
 WIP
 
-
 ## Technologies
 
 Technologies and tools used across my projects include:
@@ -39,7 +38,6 @@ Technologies and tools used across my projects include:
 - **Frameworks & Libraries:** React, Astro, Bootstrap
 - **Platforms & CMS:** WordPress
 - **Development Tools:** Git, GitHub, npm
-
 
 ## Running Locally
 
@@ -59,7 +57,7 @@ Technologies and tools used across my projects include:
 2. Navigate into the project directory:
 
    ```bash
-   cd https://github.com/Hchewai/portfolio-hchewai.git
+   cd portfolio-hchewai
    ```
 
 3. Install dependencies:
@@ -71,10 +69,10 @@ Technologies and tools used across my projects include:
 4. Start the development server:
 
    ```bash
-   npx astro dev
+   npm run dev
    ```
 
-5. Open the local URL provided in the terminal (typically `http://localhost:4321`).
+5. Open the local URL provided in the terminal `http://localhost:4321`.
 
 ### Production Build
 
@@ -97,20 +95,16 @@ npm run preview
 ├── public/          # Static assets
 ├── src/
 │   ├── components/  # Reusable components
-│   ├── data/        # Project data
+│   ├── `data`/        # Project data
 │   ├── layouts/     # Page layouts
 │   ├── pages/       # Portfolio pages
 │   └── css/         # Stylesheets
 |   └── content/     # Individual project content
-|   └── data/        # Project catalogue data
-├── astro.config.mjs 
+├── astro.config.mjs
 ├── package.json
 └── package-lock.json
 ```
 
-
 ## Future Development
 
 This portfolio is intended to evolve alongside my studies and technical interests including future studies in computer systems and networkinlg.
-
-

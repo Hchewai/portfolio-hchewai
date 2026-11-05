@@ -1,10 +1,12 @@
+
 {
   "name": "portfolio-hchewai",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal portfolio showcasing web development projects and technical research.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "keywords": [],
   "author": "",
