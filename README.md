@@ -107,4 +107,6 @@ npm run preview
 
 ## Future Development
 
-This portfolio is intended to evolve alongside my studies and technical interests including future studies in computer systems and networkinlg.
+This portfolio is intended to evolve alongside my studies and technical interests, including future studies in computer systems and networking.
+
+As I expand my technical knowledge, the portfolio will gradually incorporate projects and experiments beyond front-end development, documenting my progression into broader areas of computing.
